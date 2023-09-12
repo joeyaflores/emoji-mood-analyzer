@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emoji Mood Analyzer</title>
+</head>
+<body>
+    <h1>Emoji Mood Analyzer</h1>
+    <form action="/" method="post">
+        <textarea name="text" rows="4" cols="50" placeholder="Type your text here..."></textarea><br><br>
+        <input type="submit" value="Analyze">
+    </form>
+    {% if mood %}
+    <h2>Your Mood:</h2>
+    <p>{{ mood }}</p>
+    {% endif %}
+</body>
+</html>
+
